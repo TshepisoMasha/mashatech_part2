@@ -1,0 +1,741 @@
+/* MashaTech - Part 2 External CSS - myfirststyles.css */
+:root {
+  --green: #7FBF7F;
+  --dark-green: #3A5F3A;
+  --light-bg: #F5FAF5;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: var(--light-bg);
+  color: #333;
+}
+
+/* HEADER & NAV - This is your nav ul from photo */
+header {
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 8%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+}
+header img { height: 70px; width: auto; }
+
+nav ul{
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+  padding: 10px;
+}
+nav ul li a{
+  text-decoration: none;
+  color: var(--dark-green);
+  font-weight: 600;
+  padding: 10px;
+}
+nav ul li a:hover{
+  background-color: white;
+  color: rgb(66, 66, 154);
+  display: block;
+  padding: 10px;
+}
+
+/* HEADINGS */
+h2 {
+  background-color: burlywood;
+  color: white;
+  padding: 20px;
+  font-family: Bubblegum Sans,cursive;
+  font-size: 30px;
+  margin: 0;
+}
+
+/* IMAGES & CONTAINERS - From your photo */
+.responsive-image {
+  height: auto;
+  max-width: 100%;
+}
+.container {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+  background-color: rgb(66, 66, 154);
+  padding: 20px;
+}
+
+/* SERVICES, CONTACT, etc - Same as Part 1 */
+.services, .contact {
+  padding: 60px 8%;
+  text-align: center;
+}
+.service-grid, .contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  text-align: left;
+}
+.card, .info-card, .map-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+.hours-banner {
+  background: var(--green);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-weight: bold;
+}
+footer {
+  background: var(--dark-green);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+/* Responsive - Part 3 */
+@media (max-width: 768px){
+  .container{ display: block; }
+  nav ul{ flex-direction: column; }
+  header{ flex-direction: column; gap: 10px; }
+}
+
+
+
+
+
+ /* style for about */
+        :root { /* :roots means global settings, meaning these are variables that will be used 
+            through out the website to maintain a uniform setting*/
+            --green: #7FBF7F;
+            --dark-green: #3A5F3A;
+            --light-bg: #F5FAF5;
+            /*i have created variables of colour green in different shades*/
+
+
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box;}
+        body{
+            font-family: 'Segoe UI' , Arial, sans-serif;
+            background: var(--light-bg);
+            color: #333;
+            line-height: 1.7;
+        }
+        /* HEADER: this styles the top bar that appears on every page, being the navigator bar*/
+        header{
+            background: whitesmoke;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 8%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+            position: static;
+            top: 0;
+        }
+
+
+        /* this part will only target the image inside the header(the top part) in our case
+        its the logo */
+        header img{
+            height: 70px;
+            width: auto;
+
+             
+        }/* this part targets and styles the menu list*/
+        nav ul{
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+        nav a {/*this part styles all the links that appear on the menu*/
+            text-decoration: none;
+            color: var(--dark-green);
+            font-weight: 600;
+        }
+        nav a:hover {/* when you hover your mouse on the link a colour will appear*/
+            color: var(--green);
+        }
+        /* ABOUT SECTION*/
+        .about{
+            padding: 60px 8%;
+        }/*how the about text will look like in terms of font size, colour, how it will be positioned
+        and where it will be positioned*/
+        .about h1 {
+            text-align: center;
+            font-size: 1.2rem;
+            color: var(--dark-green);
+            margin-bottom: 10px;
+        }
+        .about p.intro{
+            font-size: 1.2rem;
+            margin-bottom: 50px;
+            color: #555;
+            text-align: center;
+        }
+        .about-grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        .card{
+            background: whitesmoke;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            border-top: 5px solid var(--green);  
+        }
+        .card h3{
+            color: var(--dark-green);
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+        /* VALUES*/
+        .values{
+            background: whitesmoke;
+            padding: 40px ;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+        .values h2 {
+            color: var(--dark-green);
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        .value-grid{ 
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            text-align: center;
+        }
+        .value-item {
+            padding: 20px;
+        }
+        .value-item .icon { 
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        /* QUOTE */
+        blockquote{
+            background: var(--green);
+            color: whitesmoke;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            font-size: 1.2rem;
+            font-style: italic;
+            margin: 40px 0;
+        }
+        blockquote span { 
+            display:block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        
+        footer{
+           background: var(--dark-green);
+           color: whitesmoke;
+           text-align: center;
+           padding: 20px;
+           margin-top: 50px;
+
+        }
+        /* style for contact */
+         
+        :root {
+            --green: #7FBF7F;
+            --dark-green: #3A5F3A;
+            --light-bg: #F5FAF5;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box;}
+        body{
+            font-family: 'Segoe UI' , Arial, sans-serif;
+            background: var(--light-bg);
+            color: #333;
+        }
+        /* HEADER */
+        header{
+            background: whitesmoke;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 8%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+        }
+        header img{
+            height: 70px;
+            width: auto;
+        }
+        nav ul{
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+        nav a {
+            text-decoration: none;
+            color: var(--dark-green);
+            font-weight: 600;
+        }
+        nav a:hover {
+            color: var(--green);
+        }
+        /* Contact section: looks at the colour, font, size and colorof how the features should appear*/
+        .contact{
+            padding: 60px 8%;
+            text-align: center;
+        }
+        .contact h1 {
+            font-size: 2.5rem;
+            color: var(--dark-green);
+            margin-bottom: 10px;
+        }
+        .contact p.subtitle {
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+        }
+        .contact-grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            text-align: left;
+            align-items: start;
+        }
+        @media(max-width: 900px){
+            .contact-grid{ grid-template-columns: 1fr;}
+            
+        }
+        
+        .ifo-card, .map-card{
+            background: whitesmoke;
+            padding: 30px ;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .info-card h3 {
+            color: var(--dark-green);
+            margin-bottom: 15px;
+        }
+        .contact-item{ 
+            margin: 15px 0;
+            font-size: 1rem;
+        }
+        .contact-item strong {
+            color: var(--dark-green);
+            display: block;
+            margin-bottom: 5px;
+        }
+        .contact-item a { 
+            color: var(--dark-green);
+            text-decoration: none;
+        }
+        .contact-item a:hover{
+            text-decoration: underline;
+        }
+        /*how the hours will apear according to the way i set it */
+        .hours-list {
+            list-style: none;
+            margin-top: 10px;
+        }
+        .hours-list li { 
+            margin: 8px 0;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px dashed #ddd;
+            padding-bottom: 5px;
+        }
+        /*this is the setting of how the map and image will look like and how it will bw positioned */
+        .map-card img.side-img{
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+
+        }
+        .map-card inframe {
+            width: 100%;
+            height: 300px;
+            border: 0;
+            border-radius: 8px;
+        }
+
+        /*this is the footer, whic is bottom part. this is how its expected to appear in terms of color
+        the backgound and how aligned the text will be*/
+        footer{
+            background: var(--dark-green);
+            color: whitesmoke;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+        /* style for enquires */
+         
+        :root {
+            --green: #7FBF7F;
+            --dark-green: #3A5F3A;
+            --light-bg: #F5FAF5;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box;}
+        body{
+            font-family: 'Segoe UI' , Arial, sans-serif;
+            background: var(--light-bg);
+            color: #333;
+        }
+        /* HEADER */
+        header{
+            background: whitesmoke;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 8%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+        }
+        header img{
+            height: 70px;
+            width: auto;
+        }
+        nav ul{
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+        nav a {
+            text-decoration: none;
+            color: var(--dark-green);
+            font-weight: 600;
+        }
+        nav a:hover {
+            color: var(--green);
+        }
+        /* ENQUIRIES SECTION: will ensure that the background, font size and the text alignment good */
+        .enquires{
+            padding: 60px 8%;
+            text-align: center;
+        }
+        .enquires h1 {
+            font-size: 2.8rem;
+            color: var(--dark-green);
+            margin-bottom: 10px;
+        }
+        .enquires p.subtitle {
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+            color: #555;
+        }
+        .enquiry-grid{
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 40px;
+            text-align: left;
+            align-items: start;
+        }
+        @media(max-width: 900px){
+            .enquiry-grid{ grid-template-columns: 1fr;}
+            
+        }
+        /* INFO CARDS: will be cards that have a text inside them, this represents how thr card should apper*/
+        .ifo-side{
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            
+        }
+        .info-card {
+            background: whitesmoke;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            border-left: 5px solid var(--green);
+        }
+        .info-card h3{ 
+            color: var(--dark-green);
+            margin-bottom: 10px;
+        
+        }
+        .info-card li {
+            margin: 8px 0;
+        }
+        
+       
+        /*FORM CARD */
+        .form-card{
+            background: whitesmoke;
+            object-fit: cover;
+            padding: 35px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+
+        }
+        .form-group {
+           margin-bottom: 18px;
+        }
+        .form-group input, .form-group select, .form-group textarea{
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: 0.3;
+        }
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus{
+            border-color: var(--green);
+            outline: none;
+        }
+        /* RADIO BUTTONS FOR ENQUIRY TYPE */
+        .radio-group{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .radio-option{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+            border: 2px solid #eee;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .radio-option:hover {
+            border-color: var(--green);
+            background: #F9FFF9;
+            
+        }
+        .radio-option input {
+            width: auto;
+        }
+        .btn{
+            background: var(--green);
+            color: whitesmoke;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            cursor: pointer;
+            width: 100%;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: var(--dark-green);
+            transform: translateY(-2px);
+        }
+
+        footer{
+            background: var(--dark-green);
+            color: whitesmoke;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        /* style for index */
+    :root {
+      --green: #7FBF7F;
+      --dark-green: #3A5F3A;
+      --light-bg: #F5FAF5;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: var(--light-bg);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* HEADER */
+    header {
+      background: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 8%;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+    }
+    header img {
+      height: 70px; /* fixed: was 500px before */
+      width: auto;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+    nav a {
+      text-decoration: none;
+      color: var(--dark-green);
+      font-weight: 600;
+      font-size: 1rem;
+    }
+    nav a:hover {
+      color: var(--green);
+    }
+
+    /* MAIN */
+    main {
+      padding: 60px 8%;
+      text-align: center;
+    }
+    main h1 {
+      font-size: 2.8rem;
+      color: var(--dark-green);
+      margin-bottom: 10px;
+    }
+    main h4 {
+      font-size: 1.3rem;
+      color: var(--green);
+      margin-bottom: 30px;
+    }
+    blockquote {
+      background: white;
+      border-left: 6px solid var(--green);
+      color: var(--dark-greens);
+      padding: 25px;
+      margin: 30px auto;
+      max-width: 900px;
+      border-radius: 10px;
+      font-style: italic;
+      font-size: 1.1rem;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    }
+    blockquote span {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+      color: var(--dark-green);
+    }
+    .btn {
+      display: inline-block;
+      background: var(--green);
+      color: white;
+      padding: 14px 30px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 20px;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: var(--dark-green);
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--dark-green);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+
+    /* style for services */
+        :root {
+            --green: #7FBF7F;
+            --dark-green: #3A5F3A;
+            --light-bg: #F5FAF5;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box;}
+        body{
+            font-family: 'Segoe UI' , Arial, sans-serif;
+            background: var(--light-bg);
+            color: #333;
+    
+        }
+        /* HEADER */
+        header{
+            background: whitesmoke;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 8%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+            position: sticky;
+            top: 0;
+        }
+        header img{
+            height: 70px; 
+            width: auto;
+        }
+        nav ul{
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+        nav a {
+            text-decoration: none;
+            color: var(--dark-green);
+            font-weight: 600;
+            
+        }
+        nav a:hover {
+            color: var(--green);
+        }
+        /* SERVICES SECTION */
+        .services{
+            padding: 60px 8%;
+            text-align: center;
+        }
+        .services h1 {
+            font-size: 2.5rem;
+            color: var(--dark-green);
+            margin-bottom: 10px;
+        }
+        .services p {
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)) ;
+            gap: 30px;
+        }
+        .card{
+            background: whitesmoke;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1) ;
+            transition:0.3 ;
+            text-align: left;
+        }
+        .card:hover{
+            transform: translateY(-8px);
+           
+        }
+        .card img {
+            width:100% ;
+            height: 220px;
+            object-fit: cover;
+        }
+        .card-content{
+            padding: 20px;
+        }
+        .card h3 {
+            color: var(--dark-green);
+            margin-bottom: 10px;
+        }
+        .cover p {
+            font-size: o.95rem;
+            color: #555;
+        }
+        /*FOOTER*/
+        footer{
+            background: var(--dark-green);
+            color: whitesmoke;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+
+  
+
+
+
+    

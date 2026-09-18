@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Masha Tech - Enquires </title>
+    <link rel="stylesheet" href="css_assets/style.css">
+</head>
+<body>
+    <header>
+        <img src="_images/LOGO_.jpg" width="400" height="300" alt="Masha Tech Logo">
+        <nav>
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+    
+                <li><a href="about.html">About</a></li>
+                    
+                
+                <li><a href="contact.html">Contact</a></li>
+                
+                
+                <li><a href="enquires.html">Enquires</a></li>
+                    
+                <li><a href="services.html">Services</a></li>
+                    
+                
+
+
+
+            </ul>
+            
+
+           
+
+
+        </nav>
+
+
+
+
+    </header>
+    <selection class="enquires">
+        <h1>Make an enquiry-grid</h1><!--these text will apear in the body of the header at the top-->
+        <p calss="subtitle">Join us, Volunteer with us Or Sponsor our mission</p>
+        <div class="enquiry-grid">
+            <div class="info-side">
+                <h3> Join As a Lesrner</h3>
+                <ul>
+                  <p>Are you a student in need for help?</p><!--these text i sett them to align at the bottom of each other-->
+                  <li>Free computer access</li>
+                  <li>Homework & Exam help</li>
+                  <li>Typing & digital skills classes</li>
+                </ul>
+
+            </div>
+            <div class="info-card">
+                <h3>Volunteer With Us</h3>
+                <p>Give your time and skills to uplift the community</p>
+                <ul>
+                    <li>Become a tutor or mentor</li>
+                    <li>Help with admin and events</li>
+                    <li>Teach coding or Cv workshops</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3>Sponser / Donate</h3>
+                <p>Help us grow and reach more youth</p>
+                <ul>
+                    <li>Sponsor internet od data</li>
+                    <li>Donate computer or stationery</li>
+                    <li>Fund a student's program</li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="form-card"><!--creation of a fill in form according to the speciations-->
+            <h3>Send Us Your Enquiry</h3>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label>I am enquiring about:</label>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                        <input type="radio"  name="enquiry_type"value="joining" required>
+                        <span>Joining as a learner</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="enquiry_type"value="Volunteering">
+                            <span>Volunteering</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="enquiry_type" value="sponsoring">
+                            <span>sponsoring / Donating</span>
+                        </label>
+                        <label class="radio-option">
+                            <input class="radio" name="enquiry_type" values="other">
+                            <span>Other</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="fullname">Full Name</label><!--requirement number 1-->
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label><!--reruirement number2-->
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label><!--requirement number3-->
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label><!--requirement number4-->
+                    <input type="text" id="subject" name="subject" placeholder="e.g Volunter Tutor Application">
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message</label><!--requirement number5-->
+                    <textarea id="message" name="message" rows="5" placeholder="Tell us more about how you'd like to get involved..." required></textarea>
+                </div>
+                <button type="submit" class="btn">Submit Enquiry</button><!--a feature called batton was used here to actually submit the enquiry bt the user-->
+            </form>
+        </div>
+    </selection>
+
+    <main>
+
+
+    </main>
+
+    <footer>
+        <P> 2025 Masha Tech | Ebony Park, Midrand, South Africa | info@mashatech.co.za</P>
+
+
+
+    </footer>
+    
+</body>
+</html>
